@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="HastaneTakipSistemi.App" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEBAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneBLL.DoktorBLL" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABIIAAEgAAAAAAAAAAAAAACAAAAAAAAAAAAAAACABA=</HashCode>
+      <FileName>HastaneBLL\DoktorBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneBLL.HastaBLL" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>HastaneBLL\HastaBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneBLL.HemsireBLL" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABIAAEgAAAAAAAEAAAAAAAAAAAACAAAAAAAAAAABA=</HashCode>
+      <FileName>HastaneBLL\HemsireBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneBLL.LoginBLL" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HastaneBLL\LoginBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.DoktorDAL" Collapsed="true">
+    <Position X="11.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAggAAAAAAAAAAAAAEAAAAAAAAAAAAABIABAAIQ=</HashCode>
+      <FileName>HastaneDAL\DoktorDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.HastaDAL" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAABABAAAAAAAAEAAAAAAQ=</HashCode>
+      <FileName>HastaneDAL\HastaDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.htoEntities" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAKAAEIAAAAACAAAAgAAQAEAEAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>HastaneDAL\HastaneModel.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.admin" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>HastaneDAL\admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.doktorlar" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAACAADAiAAAAAAAAAgAAAACAgAAAAACAAEA=</HashCode>
+      <FileName>HastaneDAL\doktorlar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.eczacilar" Collapsed="true">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAAAAAAALAIAAgAEAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HastaneDAL\eczacilar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.hastalar" Collapsed="true">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAASgIMAAAEAAAABCAAABACAAAAAAAIAAAAAQAAgA=</HashCode>
+      <FileName>HastaneDAL\hastalar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.hemsireler" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAEAAAAAAgsAQBAAAAAAAAAABAAgAAAACAAAAA=</HashCode>
+      <FileName>HastaneDAL\hemsireler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.klinikler" Collapsed="true">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HastaneDAL\klinikler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.kliniklerx" Collapsed="true">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HastaneDAL\kliniklerx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.lab" Collapsed="true">
+    <Position X="15" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAEAAAAAAAAAAAAACAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>HastaneDAL\lab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.randevular" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAEAAAACAAAAEAAAgAEAAAAAAAA=</HashCode>
+      <FileName>HastaneDAL\randevular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.recete" Collapsed="true">
+    <Position X="9.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAAAEA=</HashCode>
+      <FileName>HastaneDAL\recete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.HemsireDAL" Collapsed="true">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAAAAgAAAAAIAAAAAAABAAAAAAABAAAAAAAAAAAIQ=</HashCode>
+      <FileName>HastaneDAL\HemsireDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneDAL.LoginDAL" Collapsed="true">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>HastaneDAL\LoginDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.DoktorUI.DoktorBilgiWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAUACAAAAAABJQARAAACgAADAAAIAMggAAAIIAg=</HashCode>
+      <FileName>HastaneUI\DoktorUI\DoktorBilgiWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.DoktorUI.DoktorLaboratuvarSonucGirWindow" BaseTypeListCollapsed="true">
+    <Position X="4" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAggAACAAAI=</HashCode>
+      <FileName>HastaneUI\DoktorUI\DoktorLaboratuvarSonucGirWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.DoktorUI.DoktorLaboratuvarSonucSorgulaWindow" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAEAAEABIAAAAAEAgAAFQAAAAAAAAAAAAQA=</HashCode>
+      <FileName>HastaneUI\DoktorUI\DoktorLaboratuvarSonucSorgulaWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.DoktorUI.DoktorRandevuGosterWindow" BaseTypeListCollapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAIAAQAAAAgAAAAAAAAAgoAAAQAAA=</HashCode>
+      <FileName>HastaneUI\DoktorUI\DoktorRandevuGosterWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.DoktorUI.DoktorReceteGoruntuleWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAEAEgEAABIAAAAQEAgAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HastaneUI\DoktorUI\DoktorReceteGoruntuleWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.DoktorUI.DoktorReceteYazWindow" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAEAAAAAAAAAQAAAAAAAAAAAAAAAAggAAAAAAE=</HashCode>
+      <FileName>HastaneUI\DoktorUI\DoktorReceteYazWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.DoktorUI.DoktorWindow" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAABIAAQAgAEgD8AAAAAAAEBAAAAAAA=</HashCode>
+      <FileName>HastaneUI\DoktorUI\DoktorWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.HastaBilgileriGuncelleWindow" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAQgAARAAJAAIAAAABAAgEgDIAAAAAgAAgBAwAA=</HashCode>
+      <FileName>HastaneUI\HastaBilgileriGuncelleWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.HastaRandevuGecmisiWindow" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAAAAAAAAAAIAAIAAAAAEAgAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>HastaneUI\HastaRandevuGecmisiWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.HastaRandevuWindow" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMJBAAIBABAAFAAIAcEBAASoAgAEAQAhAMAAwCAxAA=</HashCode>
+      <FileName>HastaneUI\HastaRandevuWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.HemsireUI.HemsireBilgiWindow" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAASCAAkAAAAAKAEAQAAAgAEDIAA4IFgAAAAAAAA=</HashCode>
+      <FileName>HastaneUI\HemsireUI\HemsireBilgiWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.HemsireUI.HemsireLavoratuvarSonucSorgulaWindow" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgQAAAAAAAEAIIAAAAAEAgAAFQAAAAAAAAAAAAQA=</HashCode>
+      <FileName>HastaneUI\HemsireUI\HemsireLavoratuvarSonucSorgulaWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.HemsireUI.HemsireRandevuGosterWindow" BaseTypeListCollapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAIAAQAAAAgAACAAAQAAgIAAAQAAA=</HashCode>
+      <FileName>HastaneUI\HemsireUI\HemsireRandevuGosterWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.HemsireUI.HemsireReceteGoruntuleWindow" BaseTypeListCollapsed="true">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAEAEgEAAIIAIAAQAAgAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HastaneUI\HemsireUI\HemsireReceteGoruntuleWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.HastaneUI.HemsireUI.HemsireWindow" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAIBAAQgAAgDoAAAAQAEAAAAABAAA=</HashCode>
+      <FileName>HastaneUI\HemsireUI\HemsireWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HastaneTakipSistemi.Helpers.CommonHelper" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAgAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\CommonHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.Helpers.StringHelper" Collapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\StringHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.Properties.Resources" Collapsed="true">
+    <Position X="13.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HastaneTakipSistemi.Properties.Settings" Collapsed="true">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MahApps.Metro.Controls.MetroWindow" Collapsed="true">
+    <Position X="5.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Configuration.ApplicationSettingsBase" Collapsed="true">
+    <Position X="17.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Data.Entity.DbContext" Collapsed="true">
+    <Position X="17.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

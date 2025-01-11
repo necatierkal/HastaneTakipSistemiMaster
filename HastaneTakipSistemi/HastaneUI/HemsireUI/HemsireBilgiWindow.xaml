@@ -1,0 +1,205 @@
+﻿<mah:MetroWindow x:Class="HastaneTakipSistemi.HastaneUI.HemsireUI.HemsireBilgiWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 xmlns:controls="http://metro.mahapps.com/winf/xaml/controls"
+                 xmlns:local="clr-namespace:HastaneTakipSistemi.HastaneUI"
+                 mc:Ignorable="d"
+                 Title="Doktor Bilgileri" 
+                 Height="450" 
+                 Width="400">
+    <GroupBox Header="BİLGİLERİMİ GÜNCELLE"
+              Margin="5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0"
+               Grid.Column="0"
+               Content="T.C. Kimlik No"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <TextBox Name="tbxTCKimlikNo"
+                 Grid.Row="0"
+                 IsReadOnly="True"
+                 Grid.Column="1"
+                 Width="150"
+                 Margin="2"
+                 HorizontalAlignment="center">
+            </TextBox>
+            <Label Grid.Row="1"
+               Grid.Column="0"
+               Content="Ad"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <TextBox Name="tbxAd"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 Width="150"
+                 Margin="2"
+                 HorizontalAlignment="center">
+            </TextBox>
+            <Label Grid.Row="2"
+               Grid.Column="0"
+               Content="Soyad"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <TextBox Name="tbxSoyad"
+                 Grid.Row="2"
+                 Grid.Column="1"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 Width="150"
+                 Margin="2"
+                 HorizontalAlignment="center">
+            </TextBox>
+            <Label Grid.Row="3"
+               Grid.Column="0"
+               Content="Doğum Tarihi"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <DatePicker Name="dtpDogumTarih"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Width="150"
+                        Margin="2">
+            </DatePicker>
+            <Label Grid.Row="4"
+               Grid.Column="0"
+               Content="Hemşire Alan"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <TextBox Name="tbxAlan"
+                      Grid.Row="4"
+                      Grid.Column="1"
+                      Margin="2"
+                      Width="150">
+            </TextBox>
+            <Label Grid.Row="5"
+               Grid.Column="0"
+               Content="İl"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <TextBox Name="tbxIl"
+                 Grid.Row="5"
+                 Grid.Column="1"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 Width="150"
+                 Margin="2"
+                 HorizontalAlignment="center">
+            </TextBox>
+            <Label Grid.Row="6"
+               Grid.Column="0"
+               Content="İlçe"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <TextBox Name="tbxIlce"
+                 Grid.Row="6"
+                 Grid.Column="1"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 Width="150"
+                 Margin="2"
+                 HorizontalAlignment="center">
+            </TextBox>
+            <Label Grid.Row="7"
+               Grid.Column="0"
+               Content="Cinsiyet"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <ComboBox Name="cbxCinsiyet"
+                      Grid.Row="7"
+                      Grid.Column="1"
+                      Margin="2"
+                      Width="150">
+            </ComboBox>
+            <Label Grid.Row="8"
+               Grid.Column="0"
+               Content="Telefon"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <TextBox Name="tbxTel"
+                 Grid.Row="8"
+                 Grid.Column="1"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 Width="150"
+                 Margin="2"
+                 Text="(05..).."
+                 HorizontalAlignment="center">
+            </TextBox>
+            <Label Grid.Row="9"
+               Grid.Column="0"
+               Content="Şifre"
+               Margin="2"
+               HorizontalAlignment="Right">
+            </Label>
+            <TextBox Name="tbxSifre"
+                 Grid.Row="9"
+                 Grid.Column="1"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 Width="150"
+                 Margin="2"
+                 HorizontalAlignment="center">
+            </TextBox>
+            <StackPanel Grid.Row="10"
+                        VerticalAlignment="Bottom"
+                        Margin="0,10"
+                        Orientation="Horizontal"
+                        Grid.ColumnSpan="2"
+                        HorizontalAlignment="Center">
+                <Button Name="btnAnaMenu"
+                        Grid.Row="2"
+                        Margin="15"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource MahApps.Styles.Button}"
+                        Content="Ana Menüye Dön"
+                        Foreground="Brown"
+                        BorderBrush="Brown" Click="btnAnaMenu_Click">
+                </Button>
+                <Button Name="btnGuncelle"
+                        Grid.Column="2"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource MahApps.Styles.Button}"
+                        Content="GÜNCELLE"
+                        Width="100"
+                        Foreground="Blue"
+                        BorderBrush="Blue"
+                        Margin="15" Click="btnGuncelle_Click">
+                </Button>
+
+            </StackPanel>
+        </Grid>
+    </GroupBox>
+
+</mah:MetroWindow>
+

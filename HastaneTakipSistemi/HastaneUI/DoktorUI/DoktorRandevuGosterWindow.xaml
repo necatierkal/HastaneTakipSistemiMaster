@@ -1,0 +1,73 @@
+﻿<mah:MetroWindow x:Class="HastaneTakipSistemi.HastaneUI.DoktorUI.DoktorRandevuGosterWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 xmlns:controls="http://metro.mahapps.com/winf/xaml/controls"
+                 xmlns:local="clr-namespace:HastaneTakipSistemi.HastaneUI"
+                 mc:Ignorable="d"
+                 Title="Randevu Sorgulama Ekranı" Height="450" Width="800">
+    <Grid>
+        <GroupBox Header="RANDEVULARIM"
+                  Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <DataGrid Name="dgrRandevu"
+                          VerticalAlignment="Stretch"
+                          HorizontalAlignment="Stretch"
+                          AutoGenerateColumns="False"
+                          ItemsSource="{Binding randevuList,UpdateSourceTrigger=PropertyChanged}"
+                          Margin="1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Path=randevu_id}" IsReadOnly="True" Header="Randevu Id" Width="SizeToHeader"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path=randevu_tarihi}" IsReadOnly="True" Header="Randevu Tarihi" Width="SizeToHeader"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path=randevu_saati}" IsReadOnly="True" Header="Randevu Saati" Width="SizeToHeader"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path=dr_id}" IsReadOnly="True" Header="Doktor Kimlik" Width="SizeToHeader"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path=hasta_id}" IsReadOnly="True" Header="Hasta Kimlik" Width="SizeToHeader"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Path=klinik_id}" IsReadOnly="True" Header="Klinik" Width="SizeToHeader"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel Grid.Row="1"
+                            VerticalAlignment="Bottom"
+                            HorizontalAlignment="Center"
+                            Margin="5"
+                            Orientation="Horizontal">
+                    <Button Name="btnAnaMenu"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Style="{StaticResource MahApps.Styles.Button}"
+                            Content="Ana Menüye Dön"
+                            Foreground="Brown"
+                            BorderBrush="Brown" 
+                            Click="btnAnaMenu_Click">
+                    </Button>
+                    <Button Name="btnRandevuListeleToplu"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Style="{StaticResource MahApps.Styles.Button}"
+                            Content="Toplu Randevu"
+                            Foreground="Blue"
+                            BorderBrush="Blue" 
+                            Click="btnRandevuListeleToplu_Click">
+                    </Button>
+                    <Button Name="btnRandevuListeleGunluk"
+                            Margin="5"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Style="{StaticResource MahApps.Styles.Button}"
+                            Content="Günlük Randevu"
+                            Foreground="Blue"
+                            BorderBrush="Blue" 
+                            Click="btnRandevuListeleGunluk_Click">
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</mah:MetroWindow>

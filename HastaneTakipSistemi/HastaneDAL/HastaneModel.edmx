@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="htoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="admin">
+          <Key>
+            <PropertyRef Name="admin_id" />
+          </Key>
+          <Property Name="admin_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="admin_giris" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="admin_sifre" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="doktorlar">
+          <Key>
+            <PropertyRef Name="dr_id" />
+          </Key>
+          <Property Name="dr_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dr_ad" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_soyad" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_dogum" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_tc" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_alan" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_il" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_ilçe" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_tel" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_cins" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_sifre" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_klinik" Type="int" />
+        </EntityType>
+        <EntityType Name="eczacilar">
+          <Key>
+            <PropertyRef Name="eczaci_id" />
+          </Key>
+          <Property Name="eczaci_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="eczaci_ad" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="eczaci_soyad" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="eczaci_dogum" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="eczaci_tc" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="eczaci_il" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="eczaci_ilçe" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="eczaci_tel" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="eczaci_cins" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="eczaci_sifre" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="hastalar">
+          <Key>
+            <PropertyRef Name="hasta_id" />
+          </Key>
+          <Property Name="hasta_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="hasta_tc" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_ad" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_soyad" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_dogum" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_dyeri" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_adres" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_il" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_ilce" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_cins" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_tel" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_anne" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_baba" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_sgk" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_mail" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_sifre" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_oda" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_yatak" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="hemsireler">
+          <Key>
+            <PropertyRef Name="hemsire_id" />
+          </Key>
+          <Property Name="hemsire_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="hemsire_ad" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_soyad" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_dogum" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_tc" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_alan" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_il" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_ilçe" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_tel" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_cins" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hemsire_sifre" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ilceler">
+          <Key>
+            <PropertyRef Name="IlceID" />
+          </Key>
+          <Property Name="IlceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IlID" Type="int" />
+          <Property Name="Ilce" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Iller">
+          <Key>
+            <PropertyRef Name="IlID" />
+          </Key>
+          <Property Name="IlID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Il" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="klinikler">
+          <Key>
+            <PropertyRef Name="klinik_id" />
+          </Key>
+          <Property Name="klinik_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="klinik_ismi" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hastane_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="kliniklerx">
+          <Key>
+            <PropertyRef Name="klinik_id" />
+          </Key>
+          <Property Name="klinik_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="klinik_ismi" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hastane_id" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="lab">
+          <Key>
+            <PropertyRef Name="lab_id" />
+          </Key>
+          <Property Name="lab_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="lab_sonuc" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_id" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_id" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="sonuc_tarihi" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="randevular">
+          <Key>
+            <PropertyRef Name="randevu_id" />
+          </Key>
+          <Property Name="randevu_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="randevu_tarihi" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="randevu_saati" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_id" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_id" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="klinik_id" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="recete">
+          <Key>
+            <PropertyRef Name="recete_id" />
+          </Key>
+          <Property Name="recete_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dr_id" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="hasta_id" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="dr_aciklama" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="recete_tarihi" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Ilceler__IlID__71D1E811">
+          <End Role="Iller" Type="Self.Iller" Multiplicity="0..1" />
+          <End Role="Ilceler" Type="Self.Ilceler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Iller">
+              <PropertyRef Name="IlID" />
+            </Principal>
+            <Dependent Role="Ilceler">
+              <PropertyRef Name="IlID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="htoModelStoreContainer">
+          <EntitySet Name="admin" EntityType="Self.admin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="doktorlar" EntityType="Self.doktorlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="eczacilar" EntityType="Self.eczacilar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="hastalar" EntityType="Self.hastalar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="hemsireler" EntityType="Self.hemsireler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ilceler" EntityType="Self.Ilceler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Iller" EntityType="Self.Iller" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="klinikler" EntityType="Self.klinikler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="kliniklerx" EntityType="Self.kliniklerx" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="lab" EntityType="Self.lab" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="randevular" EntityType="Self.randevular" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="recete" EntityType="Self.recete" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Ilceler__IlID__71D1E811" Association="Self.FK__Ilceler__IlID__71D1E811">
+            <End Role="Iller" EntitySet="Iller" />
+            <End Role="Ilceler" EntitySet="Ilceler" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="htoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="admin">
+          <Key>
+            <PropertyRef Name="admin_id" />
+          </Key>
+          <Property Name="admin_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="admin_giris" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="admin_sifre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="doktorlar">
+          <Key>
+            <PropertyRef Name="dr_id" />
+          </Key>
+          <Property Name="dr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dr_ad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_soyad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_dogum" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_tc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_alan" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_il" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_ilçe" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_tel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_cins" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_sifre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_klinik" Type="Int32" />
+        </EntityType>
+        <EntityType Name="eczacilar">
+          <Key>
+            <PropertyRef Name="eczaci_id" />
+          </Key>
+          <Property Name="eczaci_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="eczaci_ad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eczaci_soyad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eczaci_dogum" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eczaci_tc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eczaci_il" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eczaci_ilçe" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eczaci_tel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eczaci_cins" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eczaci_sifre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="hastalar">
+          <Key>
+            <PropertyRef Name="hasta_id" />
+          </Key>
+          <Property Name="hasta_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="hasta_tc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_ad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_soyad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_dogum" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_dyeri" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_adres" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_il" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_ilce" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_cins" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_tel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_anne" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_baba" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_sgk" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_mail" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_sifre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_oda" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_yatak" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="hemsireler">
+          <Key>
+            <PropertyRef Name="hemsire_id" />
+          </Key>
+          <Property Name="hemsire_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="hemsire_ad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_soyad" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_dogum" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_tc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_alan" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_il" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_ilçe" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_tel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_cins" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hemsire_sifre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="klinikler">
+          <Key>
+            <PropertyRef Name="klinik_id" />
+          </Key>
+          <Property Name="klinik_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="klinik_ismi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hastane_id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="kliniklerx">
+          <Key>
+            <PropertyRef Name="klinik_id" />
+          </Key>
+          <Property Name="klinik_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="klinik_ismi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hastane_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="lab">
+          <Key>
+            <PropertyRef Name="lab_id" />
+          </Key>
+          <Property Name="lab_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="lab_sonuc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sonuc_tarihi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="randevular">
+          <Key>
+            <PropertyRef Name="randevu_id" />
+          </Key>
+          <Property Name="randevu_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="randevu_tarihi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="randevu_saati" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="klinik_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="recete">
+          <Key>
+            <PropertyRef Name="recete_id" />
+          </Key>
+          <Property Name="recete_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dr_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hasta_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dr_aciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="recete_tarihi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="htoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="admin" EntityType="Self.admin" />
+          <EntitySet Name="doktorlar" EntityType="Self.doktorlar" />
+          <EntitySet Name="eczacilar" EntityType="Self.eczacilar" />
+          <EntitySet Name="hastalar" EntityType="Self.hastalar" />
+          <EntitySet Name="hemsireler" EntityType="Self.hemsireler" />
+          <EntitySet Name="klinikler" EntityType="Self.klinikler" />
+          <EntitySet Name="kliniklerx" EntityType="Self.kliniklerx" />
+          <EntitySet Name="lab" EntityType="Self.lab" />
+          <EntitySet Name="randevular" EntityType="Self.randevular" />
+          <EntitySet Name="recete" EntityType="Self.recete" />
+          <EntitySet Name="Ilceler" EntityType="htoModel.Ilceler" />
+          <EntitySet Name="Iller" EntityType="htoModel.Iller" />
+          <AssociationSet Name="FK__Ilceler__IlID__71D1E811" Association="htoModel.FK__Ilceler__IlID__71D1E811">
+            <End Role="Iller" EntitySet="Iller" />
+            <End Role="Ilceler" EntitySet="Ilceler" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Ilceler">
+          <Key>
+            <PropertyRef Name="IlceID" />
+          </Key>
+          <Property Name="IlceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IlID" Type="Int32" />
+          <Property Name="Ilce" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Iller" Relationship="htoModel.FK__Ilceler__IlID__71D1E811" FromRole="Ilceler" ToRole="Iller" />
+        </EntityType>
+        <EntityType Name="Iller">
+          <Key>
+            <PropertyRef Name="IlID" />
+          </Key>
+          <Property Name="IlID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Il" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Ilceler" Relationship="htoModel.FK__Ilceler__IlID__71D1E811" FromRole="Iller" ToRole="Ilceler" />
+        </EntityType>
+        <Association Name="FK__Ilceler__IlID__71D1E811">
+          <End Type="htoModel.Iller" Role="Iller" Multiplicity="0..1" />
+          <End Type="htoModel.Ilceler" Role="Ilceler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Iller">
+              <PropertyRef Name="IlID" />
+            </Principal>
+            <Dependent Role="Ilceler">
+              <PropertyRef Name="IlID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="htoModelStoreContainer" CdmEntityContainer="htoEntities">
+          <EntitySetMapping Name="admin">
+            <EntityTypeMapping TypeName="htoModel.admin">
+              <MappingFragment StoreEntitySet="admin">
+                <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+                <ScalarProperty Name="admin_giris" ColumnName="admin_giris" />
+                <ScalarProperty Name="admin_sifre" ColumnName="admin_sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="doktorlar">
+            <EntityTypeMapping TypeName="htoModel.doktorlar">
+              <MappingFragment StoreEntitySet="doktorlar">
+                <ScalarProperty Name="dr_id" ColumnName="dr_id" />
+                <ScalarProperty Name="dr_ad" ColumnName="dr_ad" />
+                <ScalarProperty Name="dr_soyad" ColumnName="dr_soyad" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="dr_dogum" ColumnName="dr_dogum" />
+                <ScalarProperty Name="dr_tc" ColumnName="dr_tc" />
+                <ScalarProperty Name="dr_alan" ColumnName="dr_alan" />
+                <ScalarProperty Name="dr_il" ColumnName="dr_il" />
+                <ScalarProperty Name="dr_ilçe" ColumnName="dr_ilçe" />
+                <ScalarProperty Name="dr_tel" ColumnName="dr_tel" />
+                <ScalarProperty Name="dr_cins" ColumnName="dr_cins" />
+                <ScalarProperty Name="dr_sifre" ColumnName="dr_sifre" />
+                <ScalarProperty Name="dr_klinik" ColumnName="dr_klinik" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="eczacilar">
+            <EntityTypeMapping TypeName="htoModel.eczacilar">
+              <MappingFragment StoreEntitySet="eczacilar">
+                <ScalarProperty Name="eczaci_id" ColumnName="eczaci_id" />
+                <ScalarProperty Name="eczaci_ad" ColumnName="eczaci_ad" />
+                <ScalarProperty Name="eczaci_soyad" ColumnName="eczaci_soyad" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="eczaci_dogum" ColumnName="eczaci_dogum" />
+                <ScalarProperty Name="eczaci_tc" ColumnName="eczaci_tc" />
+                <ScalarProperty Name="eczaci_il" ColumnName="eczaci_il" />
+                <ScalarProperty Name="eczaci_ilçe" ColumnName="eczaci_ilçe" />
+                <ScalarProperty Name="eczaci_tel" ColumnName="eczaci_tel" />
+                <ScalarProperty Name="eczaci_cins" ColumnName="eczaci_cins" />
+                <ScalarProperty Name="eczaci_sifre" ColumnName="eczaci_sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="hastalar">
+            <EntityTypeMapping TypeName="htoModel.hastalar">
+              <MappingFragment StoreEntitySet="hastalar">
+                <ScalarProperty Name="hasta_id" ColumnName="hasta_id" />
+                <ScalarProperty Name="hasta_tc" ColumnName="hasta_tc" />
+                <ScalarProperty Name="hasta_ad" ColumnName="hasta_ad" />
+                <ScalarProperty Name="hasta_soyad" ColumnName="hasta_soyad" />
+                <ScalarProperty Name="hasta_dogum" ColumnName="hasta_dogum" />
+                <ScalarProperty Name="hasta_dyeri" ColumnName="hasta_dyeri" />
+                <ScalarProperty Name="hasta_adres" ColumnName="hasta_adres" />
+                <ScalarProperty Name="hasta_il" ColumnName="hasta_il" />
+                <ScalarProperty Name="hasta_ilce" ColumnName="hasta_ilce" />
+                <ScalarProperty Name="hasta_cins" ColumnName="hasta_cins" />
+                <ScalarProperty Name="hasta_tel" ColumnName="hasta_tel" />
+                <ScalarProperty Name="hasta_anne" ColumnName="hasta_anne" />
+                <ScalarProperty Name="hasta_baba" ColumnName="hasta_baba" />
+                <ScalarProperty Name="hasta_sgk" ColumnName="hasta_sgk" />
+                <ScalarProperty Name="hasta_mail" ColumnName="hasta_mail" />
+                <ScalarProperty Name="hasta_sifre" ColumnName="hasta_sifre" />
+                <ScalarProperty Name="hasta_oda" ColumnName="hasta_oda" />
+                <ScalarProperty Name="hasta_yatak" ColumnName="hasta_yatak" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="hemsireler">
+            <EntityTypeMapping TypeName="htoModel.hemsireler">
+              <MappingFragment StoreEntitySet="hemsireler">
+                <ScalarProperty Name="hemsire_id" ColumnName="hemsire_id" />
+                <ScalarProperty Name="hemsire_ad" ColumnName="hemsire_ad" />
+                <ScalarProperty Name="hemsire_soyad" ColumnName="hemsire_soyad" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="hemsire_dogum" ColumnName="hemsire_dogum" />
+                <ScalarProperty Name="hemsire_tc" ColumnName="hemsire_tc" />
+                <ScalarProperty Name="hemsire_alan" ColumnName="hemsire_alan" />
+                <ScalarProperty Name="hemsire_il" ColumnName="hemsire_il" />
+                <ScalarProperty Name="hemsire_ilçe" ColumnName="hemsire_ilçe" />
+                <ScalarProperty Name="hemsire_tel" ColumnName="hemsire_tel" />
+                <ScalarProperty Name="hemsire_cins" ColumnName="hemsire_cins" />
+                <ScalarProperty Name="hemsire_sifre" ColumnName="hemsire_sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="klinikler">
+            <EntityTypeMapping TypeName="htoModel.klinikler">
+              <MappingFragment StoreEntitySet="klinikler">
+                <ScalarProperty Name="klinik_id" ColumnName="klinik_id" />
+                <ScalarProperty Name="klinik_ismi" ColumnName="klinik_ismi" />
+                <ScalarProperty Name="hastane_id" ColumnName="hastane_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kliniklerx">
+            <EntityTypeMapping TypeName="htoModel.kliniklerx">
+              <MappingFragment StoreEntitySet="kliniklerx">
+                <ScalarProperty Name="klinik_id" ColumnName="klinik_id" />
+                <ScalarProperty Name="klinik_ismi" ColumnName="klinik_ismi" />
+                <ScalarProperty Name="hastane_id" ColumnName="hastane_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="lab">
+            <EntityTypeMapping TypeName="htoModel.lab">
+              <MappingFragment StoreEntitySet="lab">
+                <ScalarProperty Name="lab_id" ColumnName="lab_id" />
+                <ScalarProperty Name="lab_sonuc" ColumnName="lab_sonuc" />
+                <ScalarProperty Name="hasta_id" ColumnName="hasta_id" />
+                <ScalarProperty Name="dr_id" ColumnName="dr_id" />
+                <ScalarProperty Name="sonuc_tarihi" ColumnName="sonuc_tarihi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="randevular">
+            <EntityTypeMapping TypeName="htoModel.randevular">
+              <MappingFragment StoreEntitySet="randevular">
+                <ScalarProperty Name="randevu_id" ColumnName="randevu_id" />
+                <ScalarProperty Name="randevu_tarihi" ColumnName="randevu_tarihi" />
+                <ScalarProperty Name="randevu_saati" ColumnName="randevu_saati" />
+                <ScalarProperty Name="dr_id" ColumnName="dr_id" />
+                <ScalarProperty Name="hasta_id" ColumnName="hasta_id" />
+                <ScalarProperty Name="klinik_id" ColumnName="klinik_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="recete">
+            <EntityTypeMapping TypeName="htoModel.recete">
+              <MappingFragment StoreEntitySet="recete">
+                <ScalarProperty Name="recete_id" ColumnName="recete_id" />
+                <ScalarProperty Name="dr_id" ColumnName="dr_id" />
+                <ScalarProperty Name="hasta_id" ColumnName="hasta_id" />
+                <ScalarProperty Name="dr_aciklama" ColumnName="dr_aciklama" />
+                <ScalarProperty Name="recete_tarihi" ColumnName="recete_tarihi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ilceler">
+            <EntityTypeMapping TypeName="htoModel.Ilceler">
+              <MappingFragment StoreEntitySet="Ilceler">
+                <ScalarProperty Name="Ilce" ColumnName="Ilce" />
+                <ScalarProperty Name="IlID" ColumnName="IlID" />
+                <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Iller">
+            <EntityTypeMapping TypeName="htoModel.Iller">
+              <MappingFragment StoreEntitySet="Iller">
+                <ScalarProperty Name="Il" ColumnName="Il" />
+                <ScalarProperty Name="IlID" ColumnName="IlID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

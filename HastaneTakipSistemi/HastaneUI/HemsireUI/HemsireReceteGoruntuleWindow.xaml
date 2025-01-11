@@ -1,0 +1,116 @@
+﻿<mah:MetroWindow x:Class="HastaneTakipSistemi.HastaneUI.HemsireUI.HemsireReceteGoruntuleWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 xmlns:controls="http://metro.mahapps.com/winf/xaml/controls"
+                 xmlns:local="clr-namespace:HastaneTakipSistemi.HastaneUI"
+                 mc:Ignorable="d"
+                 Title="Reçete Görüntüle" 
+                 Height="450" 
+                 Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="HASTA ARAMA"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="3"
+                  Margin="5">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Hasta T.C. Kimlik No"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Margin="2">
+                </Label>
+                <TextBox Name="tbxTCkimlikNo"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         Width="200"
+                         TextWrapping="Wrap"
+                         Margin="2">
+                </TextBox>
+                <Button Name="btnGoruntule"
+                        Grid.Column="2"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource MahApps.Styles.Button}"
+                        Content="Görüntüle"
+                        Foreground="Blue"
+                        BorderBrush="Blue"
+                        Margin="5" Click="btnGoruntule_Click">
+                </Button>
+                <Label  Grid.Row="1"
+                        Content="Reçete:"
+                        FontSize="15"
+                        FontStyle="Italic"
+                        FontWeight="Bold"
+                        Foreground="Brown"
+                        Margin="5">
+                </Label>
+                <Label  Name ="lblRecete"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        Content="{Binding SelectedRecete.dr_aciklama,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                        FontSize="12"
+                        FontStyle="Italic"
+                        Margin="5">
+                </Label>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="LİSTE"
+                  Margin="5"
+                  Grid.Row="1">
+            <DataGrid Name="dgrRecete"
+                      ItemsSource="{Binding ReceteList}"
+                      SelectedItem="{Binding SelectedRecete,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                      AutoGenerateColumns="False"
+                      VerticalAlignment ="Stretch">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=recete_id}" IsReadOnly="True" Header="Reçete Id" Width="SizeToHeader"></DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Path=dr_id}" IsReadOnly="True" Header="Doktor Id" Width="SizeToHeader"></DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Path=hasta_id}" IsReadOnly="True" Header="Hasta Id" Width="SizeToHeader"></DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Path=dr_aciklama}" IsReadOnly="True" Header="Doktor Açıklama" Width="SizeToHeader"></DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Path=recete_tarihi}" IsReadOnly="True" Header="Reçete Tarihi" Width="SizeToHeader"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+        <mah:ProgressRing 
+                          x:Name="prgRing"
+                          Grid.Row="0"
+                          Grid.Column="0"
+                          Grid.RowSpan="4"
+                          Grid.ColumnSpan="4"
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          Visibility="Collapsed"
+                          IsActive="False">
+        </mah:ProgressRing>
+        <Button Name="btnCikis"
+                Grid.Row="2"
+                Margin="5"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Style="{StaticResource MahApps.Styles.Button}"
+                Content="Ana Menüye Dön"
+                Foreground="Brown"
+                BorderBrush="Brown" Click="btnCikis_Click">
+        </Button>
+    </Grid>
+</mah:MetroWindow>
